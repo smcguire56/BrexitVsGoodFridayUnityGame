@@ -53,11 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DamagedByCollision.cs" />
      <Compile Include="Assets\Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\cameraFollower.cs" />
      <Compile Include="Assets\Scripts\Countdown.cs" />
+     <Compile Include="Assets\Scripts\DamagedByCollision.cs" />
+     <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\selfDestruct.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Sean/Desktop/Unity Game/UnityGame/Brexit vs Good Friday/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
