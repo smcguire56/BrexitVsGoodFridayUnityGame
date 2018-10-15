@@ -17,8 +17,10 @@ player presses space bar and moves into other enemy players.
 
 Simple Fire sprite is shown in the game however has no functionality yet.
 
+# Current Dev update as of 15/10/2018
 
-
+Game now allows the player to shoot simple fire bullets from the sprite.
+later adding enemy movement and enemy firing.
 
 
 Brexit Vs Good Friday
