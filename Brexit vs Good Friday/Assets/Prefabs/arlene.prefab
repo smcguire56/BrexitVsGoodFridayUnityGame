@@ -20,9 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4780235769941266}
   - component: {fileID: 212669871732362590}
-  - component: {fileID: 61450056219132922}
   - component: {fileID: 50167022887719928}
   - component: {fileID: 114268098058862054}
+  - component: {fileID: 114019051120406408}
+  - component: {fileID: 114711713716406946}
+  - component: {fileID: 60494875517171350}
+  - component: {fileID: 114459614917956980}
   m_Layer: 9
   m_Name: arlene
   m_TagString: Untagged
@@ -63,8 +66,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61450056219132922
-BoxCollider2D:
+--- !u!60 &60494875517171350
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -85,9 +88,50 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.55, y: 2.06}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.39499998, y: -0.85999995}
+      - {x: 0.49499997, y: -0.75}
+      - {x: 0.615, y: -0.41}
+      - {x: 0.635, y: -0.31}
+      - {x: 0.615, y: 0.04}
+      - {x: 0.675, y: 0.14}
+      - {x: 0.765, y: 0.24}
+      - {x: 0.775, y: 0.26}
+      - {x: 0.775, y: 0.53999996}
+      - {x: 0.765, y: 0.58}
+      - {x: 0.615, y: 0.83}
+      - {x: 0.585, y: 0.85999995}
+      - {x: 0.355, y: 0.96999997}
+      - {x: 0.205, y: 1.03}
+      - {x: -0.36499998, y: 1.03}
+      - {x: -0.475, y: 0.94}
+      - {x: -0.625, y: 0.7}
+      - {x: -0.675, y: 0.59999996}
+      - {x: -0.775, y: 0.35}
+      - {x: -0.775, y: -0.099999994}
+      - {x: -0.66499996, y: -0.41}
+      - {x: -0.615, y: -0.53}
+      - {x: -0.445, y: -0.75}
+      - {x: -0.355, y: -0.81}
+      - {x: -0.195, y: -0.98999995}
+      - {x: -0.095, y: -1.03}
+      - {x: 0.105, y: -1.03}
+      - {x: 0.155, y: -1.02}
+      - {x: 0.195, y: -0.96}
+      - {x: 0.295, y: -0.91999996}
+--- !u!114 &114019051120406408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627700056244538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f363b8e6e564cc4a8b80fb398286b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 80
 --- !u!114 &114268098058862054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +143,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81d576c9a997e649b59ff3eb506cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
+--- !u!114 &114459614917956980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627700056244538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5be3c99d1dd60b4c8fd7157fef97b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1337583919037986, guid: e2f460f3d8b0f6649bcb716befdc3987,
+    type: 2}
+  bulletoffset: {x: 0, y: 1.7, z: 0}
+  fireDelay: 2
+--- !u!114 &114711713716406946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627700056244538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4c94d2ccce0c740ba1dc549e5f965c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 2
 --- !u!212 &212669871732362590
 SpriteRenderer:
   m_ObjectHideFlags: 1

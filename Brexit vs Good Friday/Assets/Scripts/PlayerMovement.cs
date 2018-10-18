@@ -30,11 +30,5 @@ public class PlayerMovement : MonoBehaviour {
 
         transform.position = posY;
 
-        //Vector3 posX = transform.position;
-
-        //posX.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;
-
-        //transform.position = posX;
-
     }
 }

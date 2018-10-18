@@ -15,7 +15,6 @@ public class BulletScript : MonoBehaviour {
         if( Input.GetButton("Fire1") && coolDownTimer <= 0)
         {
             coolDownTimer = fireDelay;
-            Debug.Log("Pew!");
 
              Vector3 offset = transform.rotation * bulletoffset;
 

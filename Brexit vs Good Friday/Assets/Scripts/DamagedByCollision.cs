@@ -8,8 +8,6 @@ public class DamagedByCollision : MonoBehaviour {
    public  int health = 1;
 
     void OnTriggerEnter2D() {
-        Debug.Log("Trigger!");
-
         health--;
     }
 

@@ -5,14 +5,16 @@ using UnityEngine;
 public class cameraFollower : MonoBehaviour {
 
     public Transform myTarget;
-	
+
 	// Update is called once per frame
 	void Update () {
-		if(myTarget != null)
+
+        if (myTarget != null)
         {
+            myTarget = GameObject.FindGameObjectWithTag("Player").transform; // this is going to find a certain tagged object from hirarchey and assing it to target.
             Vector3 targPos = myTarget.position;
             targPos.z = transform.position.z;
             transform.position = targPos;
         }
-	}
+    }
 }
