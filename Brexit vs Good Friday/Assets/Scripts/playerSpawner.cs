@@ -8,7 +8,6 @@ public class playerSpawner : MonoBehaviour {
 
     public GameObject playerPrefab;
     GameObject playerInstance;
-    public cameraFollower c;
 
     float respawnTimer;
     public int numberOfLives = 4;
@@ -26,9 +25,13 @@ public class playerSpawner : MonoBehaviour {
         if (playerInstance == null) {
             respawnTimer -= Time.deltaTime;
 
-            if(respawnTimer <= 0 && numberOfLives > 0)
-            {        
+            if (respawnTimer <= 0 && numberOfLives > 0)
+            {
                 SpawnPlayer();
+            }
+            else
+            {
+
             }
         }
 	}
