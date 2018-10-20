@@ -22,6 +22,11 @@ Simple Fire sprite is shown in the game however has no functionality yet.
 Game now allows the player to shoot simple fire bullets from the sprite.
 later adding enemy movement and enemy firing.
 
+# Current Dev update as of 20/10/2018
+
+Enemy firing and movement added, also fixed camera bug where it would not track the player after
+the player dies.
+
 
 Brexit Vs Good Friday
 Created by - Cian Gannon
