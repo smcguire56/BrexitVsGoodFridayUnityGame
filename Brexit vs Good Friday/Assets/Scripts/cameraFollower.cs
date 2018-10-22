@@ -26,7 +26,7 @@ public class cameraFollower : MonoBehaviour {
                 myTarget = GameObject.FindGameObjectWithTag("Player").transform;
 
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 //Debug.Log(e);
             }
