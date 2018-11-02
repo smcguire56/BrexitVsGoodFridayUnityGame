@@ -27,6 +27,13 @@ later adding enemy movement and enemy firing.
 Enemy firing and movement added, also fixed camera bug where it would not track the player after
 the player dies.
 
+# Current Dev update as of 25/10/2018
+
+Player now has a timer set up, later to add a graphic for this.
+
+# Current Dev update as of 2/11/2018
+
+Player can now toggle between second ability of an arrow, this arrow has longer range and speed.
 
 Brexit Vs Good Friday
 Created by - Cian Gannon
