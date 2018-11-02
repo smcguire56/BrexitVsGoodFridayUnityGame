@@ -6,7 +6,7 @@ using UnityEngine;
 public class cameraFollower : MonoBehaviour {
 
     public Transform myTarget;
-
+    public Vector3 offSet;
 
     // Update is called once per frame
     void Update () {
@@ -15,7 +15,7 @@ public class cameraFollower : MonoBehaviour {
         {
             myTarget = GameObject.FindGameObjectWithTag("Player").transform;
 
-            Vector3 targPos = myTarget.position;
+            Vector3 targPos = myTarget.position + offSet;
             targPos.z = transform.position.z;
             transform.position = targPos;
         }

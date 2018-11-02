@@ -169,6 +169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1337583919037986, guid: e2f460f3d8b0f6649bcb716befdc3987,
     type: 2}
+  bulletPrefabGerry: {fileID: 1337583919037986, guid: f574cf9bb1e64a54385d1a808d882549,
+    type: 2}
+  bulletToggle: {fileID: 1337583919037986, guid: e2f460f3d8b0f6649bcb716befdc3987,
+    type: 2}
   bulletoffset: {x: 0, y: 1.8, z: 0}
   fireDelay: 0.3
 --- !u!212 &212615309493845558
