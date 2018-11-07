@@ -35,6 +35,10 @@ Player now has a timer set up, later to add a graphic for this.
 
 Player can now toggle between second ability of an arrow, this arrow has longer range and speed.
 
+# Current Dev update as of 2/11/2018
+
+Game now has a map that the player can interact with, using tiles. Later going to add more levels and enemy ai.
+
 Brexit Vs Good Friday
 Created by - Cian Gannon
 Developed by - Sean McGuire
