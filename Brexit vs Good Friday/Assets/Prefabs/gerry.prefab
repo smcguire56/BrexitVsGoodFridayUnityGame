@@ -174,7 +174,7 @@ MonoBehaviour:
   bulletToggle: {fileID: 1337583919037986, guid: e2f460f3d8b0f6649bcb716befdc3987,
     type: 2}
   bulletoffset: {x: 0, y: 1.8, z: 0}
-  fireDelay: 0.3
+  fireDelay: 0.5
 --- !u!212 &212615309493845558
 SpriteRenderer:
   m_ObjectHideFlags: 1

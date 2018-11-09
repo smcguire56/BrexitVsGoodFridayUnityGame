@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour {
     public GameObject bulletPrefabGerry;
     public GameObject bulletToggle;
 
-    public Vector3 bulletoffset = new Vector3(0, 1.7f, 0);
+    public Vector3 bulletoffset = new Vector3(0, 1.8f, 0);
     public float fireDelay = 0.25f;
     float coolDownTimer = 0;
     int toggleCounter = 1;

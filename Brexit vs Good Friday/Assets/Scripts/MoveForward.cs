@@ -16,5 +16,7 @@ public class MoveForward : MonoBehaviour {
         posY += transform.rotation * velocity;
 
         transform.position = posY;
+
+        
     }
 }

@@ -39,6 +39,10 @@ Player can now toggle between second ability of an arrow, this arrow has longer 
 
 Game now has a map that the player can interact with, using tiles. Later going to add more levels and enemy ai.
 
+# Current Dev update as of 9/11/2018
+
+Fixed enemy spawning bug and configured the initial level.
+
 Brexit Vs Good Friday
 Created by - Cian Gannon
 Developed by - Sean McGuire
