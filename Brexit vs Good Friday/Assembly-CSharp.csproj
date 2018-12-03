@@ -57,13 +57,17 @@
      <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\cameraFollower.cs" />
      <Compile Include="Assets\Scripts\DamagedByCollision.cs" />
+     <Compile Include="Assets\Scripts\DamageEnemy.cs" />
      <Compile Include="Assets\Scripts\enemyShooting.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FacesPlayer.cs" />
+     <Compile Include="Assets\Scripts\KillCounter.cs" />
      <Compile Include="Assets\Scripts\MoveForward.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\playerSpawner.cs" />
      <Compile Include="Assets\Scripts\selfDestruct.cs" />
+     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
      <Compile Include="Assets\Scripts\TimerScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Sean/Desktop/Unity Game/UnityGame/Brexit vs Good Friday/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
