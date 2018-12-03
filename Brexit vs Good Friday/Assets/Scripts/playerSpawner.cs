@@ -7,11 +7,15 @@ using UnityEngine;
 public class playerSpawner : MonoBehaviour {
 
     public GameObject playerPrefab;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+    public GameObject gameOverUI;
+
     GameObject playerInstance;
 
-    bool gameOver = false;
     float respawnTimer;
-    public int numberOfLives;
+    public int numberOfLives = 4;
 	// Use this for initialization
 	void Start () {
         SpawnPlayer(); 
@@ -20,6 +24,36 @@ public class playerSpawner : MonoBehaviour {
         numberOfLives--;
         respawnTimer = 1;
         playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
+
+        if (numberOfLives > 4)
+        {
+            numberOfLives = 4;
+        }
+
+        switch (numberOfLives)
+        {
+            case 3:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(true);
+                heart3.gameObject.SetActive(true);
+                break;
+            case 2:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(true);
+                heart3.gameObject.SetActive(false);
+                break;
+            case 1:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(false);
+                heart3.gameObject.SetActive(false);
+                break;
+            case 0:
+                heart1.gameObject.SetActive(false);
+                heart2.gameObject.SetActive(false);
+                heart3.gameObject.SetActive(false);
+                break;
+        }
+        
     }
     // Update is called once per frame
     void Update () {
@@ -35,18 +69,8 @@ public class playerSpawner : MonoBehaviour {
         {
 
             Destroy(GameObject.FindGameObjectWithTag("Enemy"));
-            gameOver = true;
-
-        }
-    }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(0, 0, 100, 50), "Lives: " + numberOfLives);
-
-        if (gameOver == true)
-        {
-            GUI.Label(new Rect(300, 300, 200, 100), "GAME OVER");
+            gameOverUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
