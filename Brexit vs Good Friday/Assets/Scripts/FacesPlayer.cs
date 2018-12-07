@@ -31,7 +31,7 @@ public class FacesPlayer : MonoBehaviour {
         float zAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
 
         Quaternion desiredRot = Quaternion.Euler(0, 0, zAngle);
-
+        // execute the transform rot
         transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRot, rotSpeed * Time.deltaTime);
 
     }

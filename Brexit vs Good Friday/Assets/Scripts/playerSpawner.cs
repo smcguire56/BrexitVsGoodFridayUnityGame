@@ -32,6 +32,7 @@ public class playerSpawner : MonoBehaviour {
 
         switch (numberOfLives)
         {
+            // depending on amount of lives, display certain amount of hearts.
             case 3:
                 heart1.gameObject.SetActive(true);
                 heart2.gameObject.SetActive(true);
@@ -67,7 +68,6 @@ public class playerSpawner : MonoBehaviour {
         }
         if (numberOfLives == 0)
         {
-
             Destroy(GameObject.FindGameObjectWithTag("Enemy"));
             gameOverUI.SetActive(true);
             Time.timeScale = 0;

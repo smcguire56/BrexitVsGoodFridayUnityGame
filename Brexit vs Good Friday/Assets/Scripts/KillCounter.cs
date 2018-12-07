@@ -9,7 +9,7 @@ public class KillCounter : DamageEnemy {
     // Update is called once per frame
     void Update()
     {
-        text.text = kills + "/5 Kills";
+        text.text = kills + "/"+ requiredKills +" Kills";
     }
 
 

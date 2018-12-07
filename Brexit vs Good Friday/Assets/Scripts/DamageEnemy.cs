@@ -8,7 +8,9 @@ public class DamageEnemy : MonoBehaviour
 {
     public int health = 1;
     static protected int kills = 0;
+    public int requiredKills = 5;
 
+    // enemy health follower
     void OnTriggerEnter2D()
     {
         health--;
@@ -27,23 +29,24 @@ public class DamageEnemy : MonoBehaviour
         Destroy(gameObject);
         kills++;
 
-        if (kills >= 5 && SceneManager.GetActiveScene().name.Equals("SampleScene"))
+        // load next scene after getting the required amount of kills
+        if (kills >= requiredKills && SceneManager.GetActiveScene().name.Equals("SampleScene"))
         {
             SceneManager.LoadScene(4);
             kills = 0;
 
         }
 
-        if (kills >= 5 && SceneManager.GetActiveScene().name.Equals("Chapter2"))
+        if (kills >= requiredKills && SceneManager.GetActiveScene().name.Equals("Chapter2"))
         {
             SceneManager.LoadScene(5);
             kills = 0;
 
         }
 
-        if (kills >= 5 && SceneManager.GetActiveScene().name.Equals("Chapter3"))
+        if (kills >= requiredKills && SceneManager.GetActiveScene().name.Equals("Chapter3"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(6);
             kills = 0;
 
         }

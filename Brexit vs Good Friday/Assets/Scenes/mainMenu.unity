@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 121282158}
   - component: {fileID: 121282157}
   m_Layer: 0
-  m_Name: gerrylad (1)
+  m_Name: gerryRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 912099100}
   - component: {fileID: 912099099}
   m_Layer: 0
-  m_Name: gerrylad
+  m_Name: gerryLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

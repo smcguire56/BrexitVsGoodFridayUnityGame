@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  requiredKills: 5
 --- !u!212 &212669871732362590
 SpriteRenderer:
   m_ObjectHideFlags: 1

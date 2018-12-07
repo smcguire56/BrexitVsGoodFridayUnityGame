@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class DamagedByCollision : MonoBehaviour {
 
-   public  int health = 1;
+    // basic health system, when another object enters the 2d space, 
+    // dcrease the health of the player.
+    public  int health = 1;
 
     void OnTriggerEnter2D() {
         health--;
@@ -15,6 +17,7 @@ public class DamagedByCollision : MonoBehaviour {
     {
         if (health <= 0)
         {
+            // when health is 0, destroy the enemy
             Die();
         }
     }
